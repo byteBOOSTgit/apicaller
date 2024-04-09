@@ -56,7 +56,7 @@ let task = session.dataTask(with: request) { data, response, error in
     if let result = String(data: responseData, encoding: .utf8) {
         print(result)
     }
-    // exit the runLoop threat once the task is complete
+    // exit the runLoop thread once the task is complete
     exit(EXIT_SUCCESS)
 }
 
