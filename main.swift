@@ -19,7 +19,7 @@ guard let apiUrl = URL(string: urlString) else {
 let config = URLSessionConfiguration.default
 let session = URLSession(configuration: config)
 
-// Step 3: Create a URLRequest
+// create a URLRequest
 var request = URLRequest(url: apiUrl)
 request.httpMethod = "GET" // use the applicable HTTP method (e.g., POST, PUT)
 
